@@ -5,7 +5,7 @@ Each time that new code is pushed into your repo, you can have a [Flake8](http:/
 Example workflow:
 * Put the following text into a file named `.github/main.workflow` in your repo):
 ```hcl
-workflow "New workflow" {
+workflow "GitHub Action for Flake8" {
   on = "push"
   resolves = ["Flake8 command"]
 }
