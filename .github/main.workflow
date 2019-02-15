@@ -1,9 +1,9 @@
-workflow "GitHub Action for Flake8" {
+workflow "on push" {
   on = "push"
-  resolves = ["Flake8 command"]
+  resolves = ["GitHub Action for Flake8"]
 }
 
-action "Flake8 command" {
+action "GitHub Action for Flake8" {
   uses = "cclauss/GitHub-Action-for-Flake8@master"
   args = "flake8 --help"
 }
