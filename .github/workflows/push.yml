@@ -9,4 +9,4 @@ jobs:
     - name: GitHub Action for Flake8
       uses: cclauss/GitHub-Action-for-Flake8@master
       with:
-        args: flake8 --help
+        args: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
